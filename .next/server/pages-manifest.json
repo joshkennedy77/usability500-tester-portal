@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/test/[id]": "pages/test/[id].js",
+  "/results/[studyID]": "pages/results/[studyID].js",
+  "/dashboard": "pages/dashboard.js",
+  "/api/mark-study-complete": "pages/api/mark-study-complete.js",
+  "/submit-success": "pages/submit-success.js",
+  "/admin-dashboard": "pages/admin-dashboard.js",
+  "/studybuilder": "pages/studybuilder.js"
+}
