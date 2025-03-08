@@ -1,0 +1,106 @@
+/* Global Styles for Usability500 */
+
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #F9FAFB;
+    color: #002D72;
+    line-height: 1.5;
+}
+
+/* Global Page Layout */
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shared Content Alignment */
+.content-wrapper {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 150px; /* Ensures all pages align properly */
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-weight: bold;
+    color: #604dfe;
+    text-align: left;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+/* Input Fields */
+.input-field {
+    width: 60%;
+    min-width: 250px;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+/* Buttons */
+button {
+    background-color: #604dfe;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #4a38d4;
+}
+
+/* Floating Fun Circles */
+.page-container::before,
+.page-container::after {
+    content: '';
+    position: absolute;
+    background-color: #FF5E47;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.page-container::before {
+    width: 120px;
+    height: 120px;
+    top: 10%;
+    left: -40px;
+}
+
+.page-container::after {
+    width: 80px;
+    height: 80px;
+    bottom: 15%;
+    right: -30px;
+}

@@ -1,11 +1,15 @@
+
 import { createClient } from '@supabase/supabase-js';
 import Stripe from 'stripe';
 
-// Create Supabase Client (placeholder - will fill this after 5pm Supabase setup)
+// Create Supabase Client
 const supabase = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!);
 
-// Create Stripe Instance (uses placeholder env - you will need to set STRIPE_SECRET_KEY in your .env.local)
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: '2023-10-16' });
+// Create Stripe Instance
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: '2022-11-15',
+});
+
 
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
@@ -82,4 +86,3 @@ export default async function handler(req, res) {
         return res.status(500).json({ success: false, error: 'Failed to process your study request' });
     }
 }
-
