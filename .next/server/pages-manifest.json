@@ -1,15 +1,8 @@
 {
   "/_app": "pages/_app.js",
-  "/admin-dashboard": "pages/admin-dashboard.html",
-  "/api/generate-magic-link": "pages/api/generate-magic-link.js",
-  "/api/submit-study": "pages/api/submit-study.js",
-  "/dashboard": "pages/dashboard.html",
-  "/results/[studyID]": "pages/results/[studyID].html",
-  "/studybuilder": "pages/studybuilder.html",
-  "/submit-success": "pages/submit-success.html",
-  "/test/[id]": "pages/test/[id].html",
-  "/api/mark-study-complete": "pages/api/mark-study-complete.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/submit-success": "pages/submit-success.js",
+  "/tester-signup": "pages/tester-signup.js",
+  "/studybuilder": "pages/studybuilder.js"
 }

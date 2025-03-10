@@ -6,7 +6,7 @@ export default function StudyBuilder() {
     return (
         <div className="page-container">
             <div className="content-wrapper">
-                <h1>Request a Usability Study</h1>
+                <h1>User500 - Request a Usability Study</h1>
 
                 <label>First Name</label>
                 <input type="text" placeholder="Enter First Name" className="input-field" />

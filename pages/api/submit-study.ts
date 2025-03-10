@@ -81,6 +81,7 @@ export default async function handler(req, res) {
         // Return the checkout URL for redirect
         return res.status(200).json({ success: true, checkoutUrl: checkoutSession.url });
 
+
     } catch (error) {
         console.error('Error in submit-study.ts:', error);
         return res.status(500).json({ success: false, error: 'Failed to process your study request' });
